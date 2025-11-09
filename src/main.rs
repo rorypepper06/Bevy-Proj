@@ -17,7 +17,7 @@ fn main() {
     App::new()
         .add_plugins(DefaultPlugins)
         .add_systems(Startup, setup)
-        .add_systems(Update, (check_for_collisions, move_rect1, move_rect2))
+        .add_systems(FixedUpdate, (check_for_collisions, move_rect1, move_rect2))
         .run();
 }
 
