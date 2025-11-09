@@ -92,6 +92,4 @@ fn check_for_collisions(
     else if !(rect1x + rectSize > rect2x - rectSize && rect1x - rectSize < rect2x + rectSize) {
         println!("no collisions detected!");
     }
-
-    //test 2
 }
